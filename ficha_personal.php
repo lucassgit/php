@@ -9,7 +9,6 @@ $nombre = "Lucas Oviedo";
 $edad = 33;
 $aPeliculas = array("Avengers End Game", "The Fast and The Furius", "Star Wars The last Jedi");
 
-
 ?>
 <!DOCTYPE html>
 <html lang="es">
