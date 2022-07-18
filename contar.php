@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-//Definicion.
+//Definicion..
 function contar($aArray){
     $contador = 0;
     foreach($aArray as $item){
