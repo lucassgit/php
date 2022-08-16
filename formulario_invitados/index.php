@@ -33,7 +33,7 @@ if($_POST){
         if($codigo == "verde"){
             $mensaje = "Su código de acceso es " . rand(1000, 9999);
         } else {
-            $mensaje = "Sino Ud. no tiene pase VIP";
+            $mensaje = "Ud. no tiene pase VIP";
         }
     }
 
