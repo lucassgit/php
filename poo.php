@@ -14,6 +14,10 @@ class Persona
         $this->dni = $dni;
     } 
     
+    public function __destruct() {
+        echo "Destruyendo el objeto " . $this->nombre . "<br>";
+    }
+
     public function setDni($dni){$this->dni = $dni;}
     public function getDni(){return $this->dni; }
 
@@ -28,9 +32,7 @@ class Persona
 
     public function imprimir(){}
 
-    public function __destruct() {
-        echo "Destruyendo el objeto " . $this->nombre . "<br>";
-    }
+    
 }
 
 class Alumno extends Persona{
