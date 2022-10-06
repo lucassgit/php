@@ -5,6 +5,7 @@ error_reporting(E_ALL);
 
 $pg = "Inicio";
 
+include_once("config.php");
 include_once("header.php"); 
 
 ?>

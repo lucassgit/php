@@ -1,23 +1,19 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 
-if ($_POST) {
+if($_POST) {
   $usuario = trim($_REQUEST["txtUsuario"]);
   $clave = trim($_REQUEST["txtClave"]);
 
-  if ($usuario == "admin" && $clave == "admin123") {
-    $_SESSION["nombre"] = "Lucas";
-    header("Location: index.php");
+  if($usuario == "admin" && $clave == "admin123"){
+    $_SESSION['nombre'] = "Lucas";
+    header("Location:index.php");
   } else {
     $msg = "Usuario o clave incorrecto";
   }
 }
 
-
-
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 

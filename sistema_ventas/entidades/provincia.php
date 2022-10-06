@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 class Provincia
 {
@@ -7,7 +10,7 @@ class Provincia
 
     public function __get($atributo)
     {
-        return $this->$atributo;
+      return $this->$atributo;
     }
 
     public function __set($atributo, $valor)
