@@ -14,10 +14,10 @@ $pg = "Listado de clientes";
 if($_POST){
     if(isset($_POST["btnGuardar"])){
         if(isset($_GET["id"]) && $_GET["id"] > 0){
-              //Actualizo un cliente existente
+              //Actualizo un cliente existente..
               $cliente->actualizar();
         } else {
-            //Es nuevo
+            //Si es nuevo..
             $cliente->insertar();
         }
         $msg["texto"] = "Guardado correctamente";
